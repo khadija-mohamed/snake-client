@@ -1,9 +1,6 @@
 const connect = require("./client");
 
 console.log("Connecting ...");
-connect();
-
-
 
 const setupInput = function () {
   const stdin = process.stdin;
@@ -13,4 +10,13 @@ const setupInput = function () {
   return stdin;
 };
 
+const handleUserInput = function () {
+  if (key === '\u0003') {
+    process.exit();
+};
+
+// \u0003 = unicode character of END OF TEXT -- CTRL + C
+
+connect();
 setupInput();
+handleUserInput();
