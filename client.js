@@ -1,6 +1,4 @@
 const net = require("net");
-
-const name = 'Name: KM'
 // establishes a connection with the game server
 const connect = function () {
   let up = "Move: UP";
@@ -20,6 +18,8 @@ const connect = function () {
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
+  conn.write(`Say: ${'hello friends!'}`)
+  conn.write(`Name: ${'KM'}`)
   conn.on("connect", () => {
     console.log("Sucessfully connected to game server!");
   })
