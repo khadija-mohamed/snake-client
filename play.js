@@ -20,3 +20,4 @@ const handleUserInput = function () {
 connect();
 setupInput();
 handleUserInput();
+}
