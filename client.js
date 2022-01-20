@@ -1,4 +1,6 @@
 const net = require("net");
+const {HOST, PORT} = require("./constants")
+
 // establishes a connection with the game server
 const connect = function () {
   let up = "Move: UP";
@@ -28,4 +30,4 @@ const connect = function () {
 };
 
 console.log("Connecting ...");
-connect();
+module.exports = connect;
