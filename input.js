@@ -18,5 +18,4 @@ return stdin;
 }; 
 
 
-
 // \u0003 = unicode character of END OF TEXT -- CTRL + C
