@@ -8,4 +8,3 @@ console.log("Connecting ...");
 
 connect();
 setupInput();
-handleUserInput();
